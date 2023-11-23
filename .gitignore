@@ -51,7 +51,7 @@ config.guess
 config.log
 config.status
 config.sub
-configure
+# configure
 debs
 depcomp
 install-sh
