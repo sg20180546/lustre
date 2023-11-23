@@ -1,0 +1,13 @@
+Package: lustre-client-utils-dbgsym
+Package-Type: ddeb
+Source: lustre
+Version: 2.15.58-129-gd7d1644-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Lustre Developers <lustre-devel@lists.lustre.org>
+Installed-Size: 1544
+Depends: lustre-client-utils (= 2.15.58-129-gd7d1644-1)
+Section: debug
+Priority: optional
+Description: debug symbols for lustre-client-utils
+Build-Ids: 08a27af125a3f763398c659a7a4beee40df93a6c 0caf5c5e7db667bb4c95cebe623ea39dce272c8c 14bddbaf321fa3fd9c84c11e1783c85d8ce87e42 18b043fc6c6c51445d4521e7c68aaaed91235d5e 2d348965e56f27d18045bcdaddb4c54819bc3a34 3f8b9579fe1bdf01fb341c1a9e20cdc61e4f3160 6498c6e6ee31efd3ddec7839e93d76277e8abc8a 72e3f944aeb68e45f366597ca15312293cedd261 86559ef112ac0f463227e15f9eb7b80313d9e60d a8e11f69ccc71484ee275987f0c3d79b5178df13 c400bbf43061a84313d29cb41d65f85184985e9c de885e115d6a41470c67c170f7f37505e00a61fa e5838026bb05e39bf0d5fe95ee63b8ba7daeb06a f2b289ed5eb76dda856bb821db9daf04165498bd f2fdc61d4c0f5acf35eb8904d718d622b172134e f465be587f3cd49a6b35b8028480705ad4f7764a fa85f57e828d6cd774fd99dcc976f62fe4c24a33

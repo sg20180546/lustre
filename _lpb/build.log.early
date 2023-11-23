@@ -1,0 +1,940 @@
+make: Entering directory '/usr/src/linux-headers-6.2.0-36-generic'
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: 'gcc..Ubuntu.11.4.0-1ubuntu1~22.04..11.4.0'
+  You are using:           gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+  CC [M]  /home/gs201/lustre-release/_lpb/iov_iter_has_type_member_pc/iov_iter_has_type_member_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/hlist_add_after_pc/hlist_add_after_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/strscpy_exists_pc/strscpy_exists_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/stacktrace_ops_address_return_int_pc/stacktrace_ops_address_return_int_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/broken_hash_64_pc/broken_hash_64_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/get_user_pages_6arg_pc/get_user_pages_6arg_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/rhashtable_insert_fast_pc/rhashtable_insert_fast_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/rhashtable_walk_init_pc/rhashtable_walk_init_pc.o
+/home/gs201/lustre-release/_lpb/hlist_add_after_pc/hlist_add_after_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/hlist_add_after_pc/hlist_add_after_pc.c:62:17: error: implicit declaration of function ‘hlist_add_after’; did you mean ‘hlist_add_fake’? [-Werror=implicit-function-declaration]
+   62 |                 hlist_add_after(NULL, NULL);
+      |                 ^~~~~~~~~~~~~~~
+      |                 hlist_add_fake
+cc1: some warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/hlist_add_after_pc/hlist_add_after_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/hlist_add_after_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/hlist_add_after_pc] Error 2
+/home/gs201/lustre-release/_lpb/iov_iter_has_type_member_pc/iov_iter_has_type_member_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/iov_iter_has_type_member_pc/iov_iter_has_type_member_pc.c:62:43: error: ‘struct iov_iter’ has no member named ‘type’
+   62 |                 struct iov_iter iter = { .type = ITER_KVEC };
+      |                                           ^~~~
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/iov_iter_has_type_member_pc/iov_iter_has_type_member_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/iov_iter_has_type_member_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/iov_iter_has_type_member_pc] Error 2
+In file included from include/linux/string.h:253,
+                 from include/linux/bitmap.h:11,
+                 from include/linux/cpumask.h:12,
+                 from /lib/modules/6.2.0-36-generic/build/arch/x86/include/asm/paravirt.h:17,
+                 from /lib/modules/6.2.0-36-generic/build/arch/x86/include/asm/cpuid.h:62,
+                 from /lib/modules/6.2.0-36-generic/build/arch/x86/include/asm/processor.h:19,
+                 from /lib/modules/6.2.0-36-generic/build/arch/x86/include/asm/timex.h:5,
+                 from include/linux/timex.h:67,
+                 from include/linux/time32.h:13,
+                 from include/linux/time.h:60,
+                 from include/linux/stat.h:19,
+                 from include/linux/module.h:13,
+                 from /home/gs201/lustre-release/_lpb/strscpy_exists_pc/strscpy_exists_pc.c:48:
+In function ‘strnlen’,
+    inlined from ‘strscpy’ at include/linux/fortify-string.h:344:8,
+    inlined from ‘main’ at /home/gs201/lustre-release/_lpb/strscpy_exists_pc/strscpy_exists_pc.c:62:3:
+include/linux/fortify-string.h:29:33: error: argument 1 null where non-null expected [-Werror=nonnull]
+   29 |                         __ret = __builtin_strlen(__p);          \
+      |                                 ^~~~~~~~~~~~~~~~~~~~~
+include/linux/fortify-string.h:188:24: note: in expansion of macro ‘__compiletime_strlen’
+  188 |         size_t p_len = __compiletime_strlen(p);
+      |                        ^~~~~~~~~~~~~~~~~~~~
+/home/gs201/lustre-release/_lpb/strscpy_exists_pc/strscpy_exists_pc.c: In function ‘main’:
+include/linux/fortify-string.h:29:33: note: in a call to built-in function ‘__builtin_strlen’
+   29 |                         __ret = __builtin_strlen(__p);          \
+      |                                 ^~~~~~~~~~~~~~~~~~~~~
+include/linux/fortify-string.h:188:24: note: in expansion of macro ‘__compiletime_strlen’
+  188 |         size_t p_len = __compiletime_strlen(p);
+      |                        ^~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/strscpy_exists_pc/strscpy_exists_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/strscpy_exists_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/strscpy_exists_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/stacktrace_ops_pc/stacktrace_ops_pc.o
+/home/gs201/lustre-release/_lpb/broken_hash_64_pc/broken_hash_64_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/broken_hash_64_pc/broken_hash_64_pc.c:62:27: error: ‘GOLDEN_RATIO_PRIME_64’ undeclared (first use in this function); did you mean ‘GOLDEN_RATIO_PRIME’?
+   62 |                 int tmp = GOLDEN_RATIO_PRIME_64;
+      |                           ^~~~~~~~~~~~~~~~~~~~~
+      |                           GOLDEN_RATIO_PRIME
+/home/gs201/lustre-release/_lpb/broken_hash_64_pc/broken_hash_64_pc.c:62:27: note: each undeclared identifier is reported only once for each function it appears in
+/home/gs201/lustre-release/_lpb/broken_hash_64_pc/broken_hash_64_pc.c:62:21: warning: unused variable ‘tmp’ [-Wunused-variable]
+   62 |                 int tmp = GOLDEN_RATIO_PRIME_64;
+      |                     ^~~
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/broken_hash_64_pc/broken_hash_64_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/broken_hash_64_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/broken_hash_64_pc] Error 2
+/home/gs201/lustre-release/_lpb/rhashtable_walk_init_pc/rhashtable_walk_init_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/rhashtable_walk_init_pc/rhashtable_walk_init_pc.c:63:17: error: implicit declaration of function ‘rhashtable_walk_init’; did you mean ‘rhashtable_walk_exit’? [-Werror=implicit-function-declaration]
+   63 |                 rhashtable_walk_init(NULL, NULL, GFP_KERNEL);
+      |                 ^~~~~~~~~~~~~~~~~~~~
+      |                 rhashtable_walk_exit
+/home/gs201/lustre-release/_lpb/rhashtable_insert_fast_pc/rhashtable_insert_fast_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/rhashtable_insert_fast_pc/rhashtable_insert_fast_pc.c:65:22: error: too few arguments to function ‘__rhashtable_insert_fast’
+   65 |                 rc = __rhashtable_insert_fast(NULL, NULL, NULL, params);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/gs201/lustre-release/_lpb/rhashtable_insert_fast_pc/rhashtable_insert_fast_pc.c:56:
+include/linux/rhashtable.h:705:21: note: declared here
+  705 | static inline void *__rhashtable_insert_fast(
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/rhashtable_insert_fast_pc/rhashtable_insert_fast_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/rhashtable_insert_fast_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/rhashtable_insert_fast_pc] Error 2
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/rhashtable_walk_init_pc/rhashtable_walk_init_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/rhashtable_walk_init_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/rhashtable_walk_init_pc] Error 2
+/home/gs201/lustre-release/_lpb/get_user_pages_6arg_pc/get_user_pages_6arg_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/get_user_pages_6arg_pc/get_user_pages_6arg_pc.c:64:22: error: too many arguments to function ‘get_user_pages’
+   64 |                 rc = get_user_pages(0, 0, 0, 0, NULL, NULL);
+      |                      ^~~~~~~~~~~~~~
+In file included from /home/gs201/lustre-release/_lpb/get_user_pages_6arg_pc/get_user_pages_6arg_pc.c:56:
+include/linux/mm.h:2110:6: note: declared here
+ 2110 | long get_user_pages(unsigned long start, unsigned long nr_pages,
+      |      ^~~~~~~~~~~~~~
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/get_user_pages_6arg_pc/get_user_pages_6arg_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/get_user_pages_6arg_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/get_user_pages_6arg_pc] Error 2
+/home/gs201/lustre-release/_lpb/stacktrace_ops_address_return_int_pc/stacktrace_ops_address_return_int_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/stacktrace_ops_address_return_int_pc/stacktrace_ops_address_return_int_pc.c:64:50: error: invalid use of undefined type ‘struct stacktrace_ops’
+   64 |                 rc = ((struct stacktrace_ops *)0)->address(NULL, 0, 0);
+      |                                                  ^~
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/stacktrace_ops_address_return_int_pc/stacktrace_ops_address_return_int_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/stacktrace_ops_address_return_int_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/stacktrace_ops_address_return_int_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/nr_unstable_nfs_exists_pc/nr_unstable_nfs_exists_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/kernel_setsockopt_exists_pc/kernel_setsockopt_exists_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/nla_strlcpy_pc/nla_strlcpy_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/rdma_create_id_4args_pc/rdma_create_id_4args_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/ib_alloc_fast_reg_mr_pc/ib_alloc_fast_reg_mr_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/ib_get_dma_mr_pc/ib_get_dma_mr_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/ib_map_mr_sg_4args_pc/ib_map_mr_sg_4args_pc.o
+/home/gs201/lustre-release/_lpb/stacktrace_ops_pc/stacktrace_ops_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/stacktrace_ops_pc/stacktrace_ops_pc.c:64:39: error: storage size of ‘ops’ isn’t known
+   64 |                 struct stacktrace_ops ops;
+      |                                       ^~~
+/home/gs201/lustre-release/_lpb/stacktrace_ops_pc/stacktrace_ops_pc.c:64:39: warning: unused variable ‘ops’ [-Wunused-variable]
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/stacktrace_ops_pc/stacktrace_ops_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/stacktrace_ops_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/stacktrace_ops_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/ib_map_mr_sg_5args_pc/ib_map_mr_sg_5args_pc.o
+/home/gs201/lustre-release/_lpb/nr_unstable_nfs_exists_pc/nr_unstable_nfs_exists_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/nr_unstable_nfs_exists_pc/nr_unstable_nfs_exists_pc.c:64:21: error: ‘NR_UNSTABLE_NFS’ undeclared (first use in this function)
+   64 |                 i = NR_UNSTABLE_NFS;
+      |                     ^~~~~~~~~~~~~~~
+/home/gs201/lustre-release/_lpb/nr_unstable_nfs_exists_pc/nr_unstable_nfs_exists_pc.c:64:21: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/nr_unstable_nfs_exists_pc/nr_unstable_nfs_exists_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/nr_unstable_nfs_exists_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/nr_unstable_nfs_exists_pc] Error 2
+/home/gs201/lustre-release/_lpb/kernel_setsockopt_exists_pc/kernel_setsockopt_exists_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/kernel_setsockopt_exists_pc/kernel_setsockopt_exists_pc.c:62:17: error: implicit declaration of function ‘kernel_setsockopt’; did you mean ‘kernel_getsockname’? [-Werror=implicit-function-declaration]
+   62 |                 kernel_setsockopt(NULL, 0, 0, NULL, 0);
+      |                 ^~~~~~~~~~~~~~~~~
+      |                 kernel_getsockname
+cc1: all warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/kernel_setsockopt_exists_pc/kernel_setsockopt_exists_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/kernel_setsockopt_exists_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/kernel_setsockopt_exists_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/ib_device_attrs_pc/ib_device_attrs_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/ib_alloc_pd_pc/ib_alloc_pd_pc.o
+/home/gs201/lustre-release/_lpb/nla_strlcpy_pc/nla_strlcpy_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/nla_strlcpy_pc/nla_strlcpy_pc.c:62:21: error: implicit declaration of function ‘nla_strlcpy’; did you mean ‘nla_strscpy’? [-Werror=implicit-function-declaration]
+   62 |                 if (nla_strlcpy(NULL, NULL, 0) == 0)
+      |                     ^~~~~~~~~~~
+      |                     nla_strscpy
+cc1: some warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/nla_strlcpy_pc/nla_strlcpy_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/nla_strlcpy_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/nla_strlcpy_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/ib_inc_rkey_pc/ib_inc_rkey_pc.o
+/home/gs201/lustre-release/_lpb/ib_get_dma_mr_pc/ib_get_dma_mr_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/ib_get_dma_mr_pc/ib_get_dma_mr_pc.c:71:25: error: implicit declaration of function ‘ib_get_dma_mr’ [-Werror=implicit-function-declaration]
+   71 |                         ib_get_dma_mr(NULL, 0);
+      |                         ^~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/ib_get_dma_mr_pc/ib_get_dma_mr_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/ib_get_dma_mr_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/ib_get_dma_mr_pc] Error 2
+/home/gs201/lustre-release/_lpb/rdma_create_id_4args_pc/rdma_create_id_4args_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/rdma_create_id_4args_pc/rdma_create_id_4args_pc.c:71:56: error: macro "rdma_create_id" requires 5 arguments, but only 4 given
+   71 |                         rdma_create_id(NULL, NULL, 0, 0);
+      |                                                        ^
+In file included from /home/gs201/lustre-release/_lpb/rdma_create_id_4args_pc/rdma_create_id_4args_pc.c:65:
+/usr/src/linux-headers-6.2.0-36-generic/include/rdma/rdma_cm.h:150: note: macro "rdma_create_id" defined here
+  150 | #define rdma_create_id(net, event_handler, context, ps, qp_type)               \
+      | 
+  CC [M]  /home/gs201/lustre-release/_lpb/ib_post_send_recv_const_pc/ib_post_send_recv_const_pc.o
+/home/gs201/lustre-release/_lpb/ib_alloc_fast_reg_mr_pc/ib_alloc_fast_reg_mr_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/ib_alloc_fast_reg_mr_pc/ib_alloc_fast_reg_mr_pc.c:71:25: error: implicit declaration of function ‘ib_alloc_fast_reg_mr’ [-Werror=implicit-function-declaration]
+   71 |                         ib_alloc_fast_reg_mr(NULL, 0);
+      |                         ^~~~~~~~~~~~~~~~~~~~
+/home/gs201/lustre-release/_lpb/rdma_create_id_4args_pc/rdma_create_id_4args_pc.c:71:25: error: ‘rdma_create_id’ undeclared (first use in this function); did you mean ‘rdma_create_qp’?
+   71 |                         rdma_create_id(NULL, NULL, 0, 0);
+      |                         ^~~~~~~~~~~~~~
+      |                         rdma_create_qp
+/home/gs201/lustre-release/_lpb/rdma_create_id_4args_pc/rdma_create_id_4args_pc.c:71:25: note: each undeclared identifier is reported only once for each function it appears in
+/home/gs201/lustre-release/_lpb/ib_map_mr_sg_4args_pc/ib_map_mr_sg_4args_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/ib_map_mr_sg_4args_pc/ib_map_mr_sg_4args_pc.c:71:25: error: too few arguments to function ‘ib_map_mr_sg’
+   71 |                         ib_map_mr_sg(NULL, NULL, 0, 0);
+      |                         ^~~~~~~~~~~~
+In file included from /home/gs201/lustre-release/_lpb/ib_map_mr_sg_4args_pc/ib_map_mr_sg_4args_pc.c:65:
+/usr/src/linux-headers-6.2.0-36-generic/include/rdma/ib_verbs.h:4424:5: note: declared here
+ 4424 | int ib_map_mr_sg(struct ib_mr *mr, struct scatterlist *sg, int sg_nents,
+      |     ^~~~~~~~~~~~
+cc1: some warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/rdma_create_id_4args_pc/rdma_create_id_4args_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/rdma_create_id_4args_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/rdma_create_id_4args_pc] Error 2
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/ib_alloc_fast_reg_mr_pc/ib_alloc_fast_reg_mr_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/ib_alloc_fast_reg_mr_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/ib_alloc_fast_reg_mr_pc] Error 2
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/ib_map_mr_sg_4args_pc/ib_map_mr_sg_4args_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/ib_map_mr_sg_4args_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/ib_map_mr_sg_4args_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/sane_ib_dma_map_sg_pc/sane_ib_dma_map_sg_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/ib_device_ops_test_pc/ib_device_ops_test_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/ib_sg_dma_address_test_pc/ib_sg_dma_address_test_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/rdma_reject_pc/rdma_reject_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/ib_fmr_pc/ib_fmr_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/rdma_connect_locked_pc/rdma_connect_locked_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/sk_data_ready_pc/sk_data_ready_pc.o
+In file included from /usr/src/linux-headers-6.2.0-36-generic/include/uapi/linux/posix_types.h:5,
+                 from /usr/src/linux-headers-6.2.0-36-generic/include/uapi/linux/types.h:14,
+                 from /usr/src/linux-headers-6.2.0-36-generic/include/linux/types.h:6,
+                 from /usr/src/linux-headers-6.2.0-36-generic/include/linux/limits.h:6,
+                 from /usr/src/linux-headers-6.2.0-36-generic/include/linux/kernel.h:16,
+                 from /home/gs201/lustre-release/_lpb/ib_device_ops_test_pc/ib_device_ops_test_pc.c:47:
+/home/gs201/lustre-release/_lpb/ib_device_ops_test_pc/ib_device_ops_test_pc.c: In function ‘main’:
+/usr/src/linux-headers-6.2.0-36-generic/include/linux/stddef.h:16:33: error: ‘struct ib_device_ops’ has no member named ‘unmap_fmr’
+   16 | #define offsetof(TYPE, MEMBER)  __builtin_offsetof(TYPE, MEMBER)
+      |                                 ^~~~~~~~~~~~~~~~~~
+/home/gs201/lustre-release/_lpb/ib_device_ops_test_pc/ib_device_ops_test_pc.c:62:33: note: in expansion of macro ‘offsetof’
+   62 |                         int x = offsetof(struct ib_device_ops, unmap_fmr);
+      |                                 ^~~~~~~~
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/ib_device_ops_test_pc/ib_device_ops_test_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/ib_device_ops_test_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/ib_device_ops_test_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/sock_create_kern_net_pc/sock_create_kern_net_pc.o
+/home/gs201/lustre-release/_lpb/ib_sg_dma_address_test_pc/ib_sg_dma_address_test_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/ib_sg_dma_address_test_pc/ib_sg_dma_address_test_pc.c:62:33: error: implicit declaration of function ‘ib_sg_dma_address’; did you mean ‘sg_dma_address’? [-Werror=implicit-function-declaration]
+   62 |                         u64 x = ib_sg_dma_address(NULL, NULL);
+      |                                 ^~~~~~~~~~~~~~~~~
+      |                                 sg_dma_address
+cc1: all warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/ib_sg_dma_address_test_pc/ib_sg_dma_address_test_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/ib_sg_dma_address_test_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/ib_sg_dma_address_test_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/ethtool_link_settings_pc/ethtool_link_settings_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/hypervisor_is_type_exists_pc/hypervisor_is_type_exists_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/oracle_ofed_ext_pc/oracle_ofed_ext_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/kern_sock_getname_2args_pc/kern_sock_getname_2args_pc.o
+/home/gs201/lustre-release/_lpb/ib_fmr_pc/ib_fmr_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/ib_fmr_pc/ib_fmr_pc.c:62:32: error: variable ‘fmr’ has initializer but incomplete type
+   62 |                         struct ib_fmr fmr = {};
+      |                                ^~~~~~
+/home/gs201/lustre-release/_lpb/ib_fmr_pc/ib_fmr_pc.c:62:39: error: storage size of ‘fmr’ isn’t known
+   62 |                         struct ib_fmr fmr = {};
+      |                                       ^~~
+/home/gs201/lustre-release/_lpb/ib_fmr_pc/ib_fmr_pc.c:62:39: warning: unused variable ‘fmr’ [-Wunused-variable]
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/ib_fmr_pc/ib_fmr_pc.o] Error 1
+/home/gs201/lustre-release/_lpb/oracle_ofed_ext_pc/oracle_ofed_ext_pc.c:56:26: fatal error: rdma/ib_fmr_pool.h: No such file or directory
+   56 |                 #include <rdma/ib_fmr_pool.h>
+      |                          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/oracle_ofed_ext_pc/oracle_ofed_ext_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/oracle_ofed_ext_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/oracle_ofed_ext_pc] Error 2
+make[2]: Target '/home/gs201/lustre-release/_lpb/ib_fmr_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/ib_fmr_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/in_dev_for_each_ifa_rtnl_test_pc/in_dev_for_each_ifa_rtnl_test_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/ext4_free_blocks_with_buffer_head_pc/ext4_free_blocks_with_buffer_head_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/ext4_journal_start_pc/ext4_journal_start_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/ext4_bread_pc/ext4_bread_pc.o
+/home/gs201/lustre-release/_lpb/ethtool_link_settings_pc/ethtool_link_settings_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/ethtool_link_settings_pc/ethtool_link_settings_pc.c:62:47: warning: unused variable ‘cmd’ [-Wunused-variable]
+   62 |                 struct ethtool_link_ksettings cmd;
+      |                                               ^~~
+  CC [M]  /home/gs201/lustre-release/_lpb/ext4_info_dquot_pc/ext4_info_dquot_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/config_EXT4_FS_ENCRYPTION_pc/config_EXT4_FS_ENCRYPTION_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/ext4_i_crypt_info_pc/ext4_i_crypt_info_pc.o
+/home/gs201/lustre-release/_lpb/ext4_free_blocks_with_buffer_head_pc/ext4_free_blocks_with_buffer_head_pc.c:57:26: fatal error: /ext4.h: No such file or directory
+   57 |                 #include "/ext4.h"
+      |                          ^~~~~~~~~
+compilation terminated.
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/ext4_free_blocks_with_buffer_head_pc/ext4_free_blocks_with_buffer_head_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/ext4_free_blocks_with_buffer_head_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/ext4_free_blocks_with_buffer_head_pc] Error 2
+/home/gs201/lustre-release/_lpb/ext4_journal_start_pc/ext4_journal_start_pc.c:57:26: fatal error: /ext4_jbd2.h: No such file or directory
+   57 |                 #include "/ext4_jbd2.h"
+      |                          ^~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/ext4_journal_start_pc/ext4_journal_start_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/ext4_journal_start_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/ext4_journal_start_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/ext4_journal_ensure_credits_pc/ext4_journal_ensure_credits_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/ext4_iget_3args_pc/ext4_iget_3args_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/ldiskfs_find_entry_locked_pc/ldiskfs_find_entry_locked_pc.o
+/home/gs201/lustre-release/_lpb/ext4_bread_pc/ext4_bread_pc.c:57:26: fatal error: /ext4.h: No such file or directory
+   57 |                 #include "/ext4.h"
+      |                          ^~~~~~~~~
+compilation terminated.
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/ext4_bread_pc/ext4_bread_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/ext4_bread_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/ext4_bread_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/ext4fs_dirhash_pc/ext4fs_dirhash_pc.o
+/home/gs201/lustre-release/_lpb/config_EXT4_FS_ENCRYPTION_pc/config_EXT4_FS_ENCRYPTION_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/config_EXT4_FS_ENCRYPTION_pc/config_EXT4_FS_ENCRYPTION_pc.c:63:18: error: #error CONFIG_EXT4_FS_ENCRYPTION not #defined
+   63 |                 #error CONFIG_EXT4_FS_ENCRYPTION not #defined
+      |                  ^~~~~
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/config_EXT4_FS_ENCRYPTION_pc/config_EXT4_FS_ENCRYPTION_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/config_EXT4_FS_ENCRYPTION_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/config_EXT4_FS_ENCRYPTION_pc] Error 2
+/home/gs201/lustre-release/_lpb/ext4_info_dquot_pc/ext4_info_dquot_pc.c:58:26: fatal error: /ext4.h: No such file or directory
+   58 |                 #include "/ext4.h"
+      |                          ^~~~~~~~~
+compilation terminated.
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/ext4_info_dquot_pc/ext4_info_dquot_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/ext4_info_dquot_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/ext4_info_dquot_pc] Error 2
+/home/gs201/lustre-release/_lpb/ext4_i_crypt_info_pc/ext4_i_crypt_info_pc.c:58:26: fatal error: /ext4.h: No such file or directory
+   58 |                 #include "/ext4.h"
+      |                          ^~~~~~~~~
+compilation terminated.
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/ext4_i_crypt_info_pc/ext4_i_crypt_info_pc.o] Error 1
+  CC [M]  /home/gs201/lustre-release/_lpb/handle_t_h_revoke_credits_pc/handle_t_h_revoke_credits_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/jbd2_journal_get_max_txn_bufs_pc/jbd2_journal_get_max_txn_bufs_pc.o
+make[2]: Target '/home/gs201/lustre-release/_lpb/ext4_i_crypt_info_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/ext4_i_crypt_info_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/config_im_FS_ENCRYPTION_pc/config_im_FS_ENCRYPTION_pc.o
+/home/gs201/lustre-release/_lpb/ext4_journal_ensure_credits_pc/ext4_journal_ensure_credits_pc.c:56:26: fatal error: /ext4_jbd2.h: No such file or directory
+   56 |                 #include "/ext4_jbd2.h"
+      |                          ^~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/ext4_journal_ensure_credits_pc/ext4_journal_ensure_credits_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/ext4_journal_ensure_credits_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/ext4_journal_ensure_credits_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/config_im_QUOTA_pc/config_im_QUOTA_pc.o
+/home/gs201/lustre-release/_lpb/ext4_iget_3args_pc/ext4_iget_3args_pc.c:57:26: fatal error: /ext4.h: No such file or directory
+   57 |                 #include "/ext4.h"
+      |                          ^~~~~~~~~
+compilation terminated.
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/ext4_iget_3args_pc/ext4_iget_3args_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/ext4_iget_3args_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/ext4_iget_3args_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/stack_size_8k_pc/stack_size_8k_pc.o
+/home/gs201/lustre-release/_lpb/ldiskfs_find_entry_locked_pc/ldiskfs_find_entry_locked_pc.c:57:26: fatal error: /ext4.h: No such file or directory
+   57 |                 #include "/ext4.h"
+      |                          ^~~~~~~~~
+compilation terminated.
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/ldiskfs_find_entry_locked_pc/ldiskfs_find_entry_locked_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/ldiskfs_find_entry_locked_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/ldiskfs_find_entry_locked_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/config_im_FHANDLE_pc/config_im_FHANDLE_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/config_im_FS_POSIX_ACL_pc/config_im_FS_POSIX_ACL_pc.o
+/home/gs201/lustre-release/_lpb/ext4fs_dirhash_pc/ext4fs_dirhash_pc.c:57:26: fatal error: /ext4.h: No such file or directory
+   57 |                 #include "/ext4.h"
+      |                          ^~~~~~~~~
+compilation terminated.
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/ext4fs_dirhash_pc/ext4fs_dirhash_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/ext4fs_dirhash_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/ext4fs_dirhash_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/get_projid_pc/get_projid_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/address_space_ops_invalidatepage_3args_pc/address_space_ops_invalidatepage_3args_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/dir_context_pc/dir_context_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/d_compare_5args_pc/d_compare_5args_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/d_count_pc/d_count_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/pid_ns_for_children_pc/pid_ns_for_children_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/truncate_pagecache_old_size_pc/truncate_pagecache_old_size_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/is_err_or_null_pc/is_err_or_null_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/d_alias_list_pc/d_alias_list_pc.o
+/home/gs201/lustre-release/_lpb/address_space_ops_invalidatepage_3args_pc/address_space_ops_invalidatepage_3args_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/address_space_ops_invalidatepage_3args_pc/address_space_ops_invalidatepage_3args_pc.c:63:23: error: ‘struct address_space_operations’ has no member named ‘invalidatepage’; did you mean ‘invalidate_folio’?
+   63 |                 a_ops.invalidatepage(NULL, 0, 0);
+      |                       ^~~~~~~~~~~~~~
+      |                       invalidate_folio
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/address_space_ops_invalidatepage_3args_pc/address_space_ops_invalidatepage_3args_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/address_space_ops_invalidatepage_3args_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/address_space_ops_invalidatepage_3args_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/d_alias_hlist_pc/d_alias_hlist_pc.o
+In file included from /lib/modules/6.2.0-36-generic/build/include/uapi/linux/posix_types.h:5,
+                 from include/uapi/linux/types.h:14,
+                 from include/linux/types.h:6,
+                 from include/linux/limits.h:6,
+                 from include/linux/kernel.h:16,
+                 from /home/gs201/lustre-release/_lpb/d_compare_5args_pc/d_compare_5args_pc.c:47:
+/home/gs201/lustre-release/_lpb/d_compare_5args_pc/d_compare_5args_pc.c: In function ‘main’:
+include/linux/stddef.h:8:14: warning: passing argument 2 of ‘0->d_compare’ makes integer from pointer without a cast [-Wint-conversion]
+    8 | #define NULL ((void *)0)
+      |              ^~~~~~~~~~~
+      |              |
+      |              void *
+/home/gs201/lustre-release/_lpb/d_compare_5args_pc/d_compare_5args_pc.c:62:64: note: in expansion of macro ‘NULL’
+   62 |                 ((struct dentry_operations*)0)->d_compare(NULL,NULL,0,NULL,NULL);
+      |                                                                ^~~~
+include/linux/stddef.h:8:14: note: expected ‘unsigned int’ but argument is of type ‘void *’
+    8 | #define NULL ((void *)0)
+      |              ^~~~~~~~~~~
+/home/gs201/lustre-release/_lpb/d_compare_5args_pc/d_compare_5args_pc.c:62:64: note: in expansion of macro ‘NULL’
+   62 |                 ((struct dentry_operations*)0)->d_compare(NULL,NULL,0,NULL,NULL);
+      |                                                                ^~~~
+/home/gs201/lustre-release/_lpb/d_compare_5args_pc/d_compare_5args_pc.c:62:17: error: too many arguments to function ‘0->d_compare’
+   62 |                 ((struct dentry_operations*)0)->d_compare(NULL,NULL,0,NULL,NULL);
+      |                 ^
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/d_compare_5args_pc/d_compare_5args_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/d_compare_5args_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/d_compare_5args_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/d_child_pc/d_child_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/kiocb_ki_left_pc/kiocb_ki_left_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/register_shrinker_ret_pc/register_shrinker_ret_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/vfs_rename_5args_pc/vfs_rename_5args_pc.o
+/home/gs201/lustre-release/_lpb/truncate_pagecache_old_size_pc/truncate_pagecache_old_size_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/truncate_pagecache_old_size_pc/truncate_pagecache_old_size_pc.c:62:17: error: too many arguments to function ‘truncate_pagecache’
+   62 |                 truncate_pagecache(NULL, 0, 0);
+      |                 ^~~~~~~~~~~~~~~~~~
+In file included from /home/gs201/lustre-release/_lpb/truncate_pagecache_old_size_pc/truncate_pagecache_old_size_pc.c:56:
+include/linux/mm.h:2025:13: note: declared here
+ 2025 | extern void truncate_pagecache(struct inode *inode, loff_t new);
+      |             ^~~~~~~~~~~~~~~~~~
+/home/gs201/lustre-release/_lpb/d_alias_list_pc/d_alias_list_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/d_alias_list_pc/d_alias_list_pc.c:64:32: error: passing argument 1 of ‘INIT_LIST_HEAD’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   64 |                 INIT_LIST_HEAD(&de.d_u.d_alias);
+      |                                ^~~~~~~~~~~~~~~
+      |                                |
+      |                                struct hlist_node *
+In file included from include/linux/module.h:12,
+                 from /home/gs201/lustre-release/_lpb/d_alias_list_pc/d_alias_list_pc.c:48:
+include/linux/list.h:35:53: note: expected ‘struct list_head *’ but argument is of type ‘struct hlist_node *’
+   35 | static inline void INIT_LIST_HEAD(struct list_head *list)
+      |                                   ~~~~~~~~~~~~~~~~~~^~~~
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/truncate_pagecache_old_size_pc/truncate_pagecache_old_size_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/truncate_pagecache_old_size_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/truncate_pagecache_old_size_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/vfs_unlink_3args_pc/vfs_unlink_3args_pc.o
+cc1: some warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/d_alias_list_pc/d_alias_list_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/d_alias_list_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/d_alias_list_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/d_is_positive_pc/d_is_positive_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/have_bvec_iter_pc/have_bvec_iter_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/truncate_ipages_final_pc/truncate_ipages_final_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/iops_rename_with_flags_pc/iops_rename_with_flags_pc.o
+/home/gs201/lustre-release/_lpb/kiocb_ki_left_pc/kiocb_ki_left_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/kiocb_ki_left_pc/kiocb_ki_left_pc.c:62:35: error: ‘struct kiocb’ has no member named ‘ki_left’
+   62 |                 ((struct kiocb*)0)->ki_left = 0;
+      |                                   ^~
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/kiocb_ki_left_pc/kiocb_ki_left_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/kiocb_ki_left_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/kiocb_ki_left_pc] Error 2
+/home/gs201/lustre-release/_lpb/vfs_rename_5args_pc/vfs_rename_5args_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/vfs_rename_5args_pc/vfs_rename_5args_pc.c:62:17: error: too many arguments to function ‘vfs_rename’
+   62 |                 vfs_rename(NULL, NULL, NULL, NULL, NULL);
+      |                 ^~~~~~~~~~
+In file included from /home/gs201/lustre-release/_lpb/vfs_rename_5args_pc/vfs_rename_5args_pc.c:56:
+include/linux/fs.h:1986:5: note: declared here
+ 1986 | int vfs_rename(struct renamedata *);
+      |     ^~~~~~~~~~
+  CC [M]  /home/gs201/lustre-release/_lpb/inode_ops_set_acl_pc/inode_ops_set_acl_pc.o
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/vfs_rename_5args_pc/vfs_rename_5args_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/vfs_rename_5args_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/vfs_rename_5args_pc] Error 2
+/home/gs201/lustre-release/_lpb/vfs_unlink_3args_pc/vfs_unlink_3args_pc.c: In function ‘main’:
+  CC [M]  /home/gs201/lustre-release/_lpb/vfs_rename_6args_pc/vfs_rename_6args_pc.o
+/home/gs201/lustre-release/_lpb/vfs_unlink_3args_pc/vfs_unlink_3args_pc.c:62:17: error: too few arguments to function ‘vfs_unlink’
+   62 |                 vfs_unlink(NULL, NULL, NULL);
+      |                 ^~~~~~~~~~
+In file included from /home/gs201/lustre-release/_lpb/vfs_unlink_3args_pc/vfs_unlink_3args_pc.c:56:
+include/linux/fs.h:1961:5: note: declared here
+ 1961 | int vfs_unlink(struct user_namespace *, struct inode *, struct dentry *,
+      |     ^~~~~~~~~~
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/vfs_unlink_3args_pc/vfs_unlink_3args_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/vfs_unlink_3args_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/vfs_unlink_3args_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/direct_io_iter_pc/direct_io_iter_pc.o
+/home/gs201/lustre-release/_lpb/register_shrinker_ret_pc/register_shrinker_ret_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/register_shrinker_ret_pc/register_shrinker_ret_pc.c:62:21: error: too few arguments to function ‘register_shrinker’
+   62 |                 if (register_shrinker(NULL))
+      |                     ^~~~~~~~~~~~~~~~~
+In file included from include/linux/mm.h:20,
+                 from /home/gs201/lustre-release/_lpb/register_shrinker_ret_pc/register_shrinker_ret_pc.c:56:
+include/linux/shrinker.h:102:27: note: declared here
+  102 | extern int __printf(2, 3) register_shrinker(struct shrinker *shrinker,
+      |                           ^~~~~~~~~~~~~~~~~
+  CC [M]  /home/gs201/lustre-release/_lpb/iter_init_pc/iter_init_pc.o
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/register_shrinker_ret_pc/register_shrinker_ret_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/register_shrinker_ret_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/register_shrinker_ret_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/iter_truncate_pc/iter_truncate_pc.o
+/home/gs201/lustre-release/_lpb/iops_rename_with_flags_pc/iops_rename_with_flags_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/iops_rename_with_flags_pc/iops_rename_with_flags_pc.c:65:61: error: passing argument 1 of ‘0->rename’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   65 |                 rc = ((struct inode_operations *)0)->rename(i1, d1, i2, d2, 0);
+      |                                                             ^~
+      |                                                             |
+      |                                                             struct inode *
+/home/gs201/lustre-release/_lpb/iops_rename_with_flags_pc/iops_rename_with_flags_pc.c:65:61: note: expected ‘struct user_namespace *’ but argument is of type ‘struct inode *’
+/home/gs201/lustre-release/_lpb/iops_rename_with_flags_pc/iops_rename_with_flags_pc.c:65:65: error: passing argument 2 of ‘0->rename’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   65 |                 rc = ((struct inode_operations *)0)->rename(i1, d1, i2, d2, 0);
+      |                                                                 ^~
+      |                                                                 |
+      |                                                                 struct dentry *
+/home/gs201/lustre-release/_lpb/iops_rename_with_flags_pc/iops_rename_with_flags_pc.c:65:65: note: expected ‘struct inode *’ but argument is of type ‘struct dentry *’
+/home/gs201/lustre-release/_lpb/iops_rename_with_flags_pc/iops_rename_with_flags_pc.c:65:69: error: passing argument 3 of ‘0->rename’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   65 |                 rc = ((struct inode_operations *)0)->rename(i1, d1, i2, d2, 0);
+      |                                                                     ^~
+      |                                                                     |
+      |                                                                     struct inode *
+/home/gs201/lustre-release/_lpb/iops_rename_with_flags_pc/iops_rename_with_flags_pc.c:65:69: note: expected ‘struct dentry *’ but argument is of type ‘struct inode *’
+/home/gs201/lustre-release/_lpb/iops_rename_with_flags_pc/iops_rename_with_flags_pc.c:65:73: error: passing argument 4 of ‘0->rename’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   65 |                 rc = ((struct inode_operations *)0)->rename(i1, d1, i2, d2, 0);
+      |                                                                         ^~
+      |                                                                         |
+      |                                                                         struct dentry *
+/home/gs201/lustre-release/_lpb/iops_rename_with_flags_pc/iops_rename_with_flags_pc.c:65:73: note: expected ‘struct inode *’ but argument is of type ‘struct dentry *’
+/home/gs201/lustre-release/_lpb/iops_rename_with_flags_pc/iops_rename_with_flags_pc.c:65:22: error: too few arguments to function ‘0->rename’
+   65 |                 rc = ((struct inode_operations *)0)->rename(i1, d1, i2, d2, 0);
+      |                      ^
+cc1: some warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/iops_rename_with_flags_pc/iops_rename_with_flags_pc.o] Error 1
+  CC [M]  /home/gs201/lustre-release/_lpb/file_function_iter_pc/file_function_iter_pc.o
+make[2]: Target '/home/gs201/lustre-release/_lpb/iops_rename_with_flags_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/iops_rename_with_flags_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/pagecache_get_page_pc/pagecache_get_page_pc.o
+/home/gs201/lustre-release/_lpb/vfs_rename_6args_pc/vfs_rename_6args_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/vfs_rename_6args_pc/vfs_rename_6args_pc.c:62:17: error: too many arguments to function ‘vfs_rename’
+   62 |                 vfs_rename(NULL, NULL, NULL, NULL, NULL, NULL);
+      |                 ^~~~~~~~~~
+In file included from /home/gs201/lustre-release/_lpb/vfs_rename_6args_pc/vfs_rename_6args_pc.c:56:
+include/linux/fs.h:1986:5: note: declared here
+ 1986 | int vfs_rename(struct renamedata *);
+      |     ^~~~~~~~~~
+/home/gs201/lustre-release/_lpb/direct_io_iter_pc/direct_io_iter_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/direct_io_iter_pc/direct_io_iter_pc.c:66:17: error: too many arguments to function ‘ops.direct_IO’
+   66 |                 ops.direct_IO(0, NULL, iter, offset);
+      |                 ^~~
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/vfs_rename_6args_pc/vfs_rename_6args_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/vfs_rename_6args_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/vfs_rename_6args_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/interval_blk_integrity_pc/interval_blk_integrity_pc.o
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/direct_io_iter_pc/direct_io_iter_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/direct_io_iter_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/direct_io_iter_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/key_match_pc/key_match_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/blk_integrity_iter_pc/blk_integrity_iter_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/filldir_ctx_pc/filldir_ctx_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/percpu_counter_init_pc/percpu_counter_init_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/ki_nbytes_pc/ki_nbytes_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/qc_dqblk_pc/qc_dqblk_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/aio_complete_pc/aio_complete_pc.o
+/home/gs201/lustre-release/_lpb/filldir_ctx_pc/filldir_ctx_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/filldir_ctx_pc/filldir_ctx_pc.c:69:34: error: initialization of ‘bool (*)(struct dir_context *, const char *, int,  loff_t,  u64,  unsigned int)’ {aka ‘_Bool (*)(struct dir_context *, const char *, int,  long long int,  long long unsigned int,  unsigned int)’} from incompatible pointer type ‘int (*)(struct dir_context *, const char *, int,  loff_t,  u64,  unsigned int)’ {aka ‘int (*)(struct dir_context *, const char *, int,  long long int,  long long unsigned int,  unsigned int)’} [-Werror=incompatible-pointer-types]
+   69 |                         .actor = filldir,
+      |                                  ^~~~~~~
+/home/gs201/lustre-release/_lpb/filldir_ctx_pc/filldir_ctx_pc.c:69:34: note: (near initialization for ‘ctx.actor’)
+/home/gs201/lustre-release/_lpb/interval_blk_integrity_pc/interval_blk_integrity_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/interval_blk_integrity_pc/interval_blk_integrity_pc.c:62:46: error: ‘struct blk_integrity’ has no member named ‘interval’; did you mean ‘interval_exp’?
+   62 |                 ((struct blk_integrity *)0)->interval = 0;
+      |                                              ^~~~~~~~
+      |                                              interval_exp
+cc1: all warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/filldir_ctx_pc/filldir_ctx_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/filldir_ctx_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/filldir_ctx_pc] Error 2
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/interval_blk_integrity_pc/interval_blk_integrity_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/interval_blk_integrity_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/interval_blk_integrity_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/is_root_inode_pc/is_root_inode_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/backing_dev_info_pc/backing_dev_info_pc.o
+/home/gs201/lustre-release/_lpb/ki_nbytes_pc/ki_nbytes_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/ki_nbytes_pc/ki_nbytes_pc.c:64:21: error: ‘struct kiocb’ has no member named ‘ki_nbytes’
+   64 |                 iocb.ki_nbytes = 0;
+      |                     ^
+  CC [M]  /home/gs201/lustre-release/_lpb/iov_iter_rw_pc/iov_iter_rw_pc.o
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/ki_nbytes_pc/ki_nbytes_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/ki_nbytes_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/ki_nbytes_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/have___bi_cnt_pc/have___bi_cnt_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/bio_endio_pc/bio_endio_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/symlink_use_nameidata_pc/symlink_use_nameidata_pc.o
+/home/gs201/lustre-release/_lpb/aio_complete_pc/aio_complete_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/aio_complete_pc/aio_complete_pc.c:62:17: error: implicit declaration of function ‘aio_complete’; did you mean ‘complete’? [-Werror=implicit-function-declaration]
+   62 |                 aio_complete(NULL, 0, 0);
+      |                 ^~~~~~~~~~~~
+      |                 complete
+cc1: some warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/aio_complete_pc/aio_complete_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/aio_complete_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/aio_complete_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/account_page_dirtied_3a_pc/account_page_dirtied_3a_pc.o
+/home/gs201/lustre-release/_lpb/backing_dev_info_pc/backing_dev_info_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/backing_dev_info_pc/backing_dev_info_pc.c:64:24: error: ‘struct address_space’ has no member named ‘backing_dev_info’
+   64 |                 mapping.backing_dev_info = NULL;
+      |                        ^
+  CC [M]  /home/gs201/lustre-release/_lpb/crypto_alloc_skcipher_pc/crypto_alloc_skcipher_pc.o
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/backing_dev_info_pc/backing_dev_info_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/backing_dev_info_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/backing_dev_info_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/blk_integrity_interval_exp_pc/blk_integrity_interval_exp_pc.o
+/home/gs201/lustre-release/_lpb/symlink_use_nameidata_pc/symlink_use_nameidata_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/symlink_use_nameidata_pc/symlink_use_nameidata_pc.c:65:47: error: ‘struct inode_operations’ has no member named ‘follow_link’
+   65 |                 ((struct inode_operations *)0)->follow_link(NULL, nd);
+      |                                               ^~
+/home/gs201/lustre-release/_lpb/symlink_use_nameidata_pc/symlink_use_nameidata_pc.c:66:49: error: ‘struct inode_operations’ has no member named ‘put_link’; did you mean ‘get_link’?
+   66 |                 ((struct inode_operations *)0)->put_link(NULL, nd, NULL);
+      |                                                 ^~~~~~~~
+      |                                                 get_link
+  CC [M]  /home/gs201/lustre-release/_lpb/bio_integrity_payload_bip_iter_pc/bio_integrity_payload_bip_iter_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/cache_head_has_hlist_pc/cache_head_has_hlist_pc.o
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/symlink_use_nameidata_pc/symlink_use_nameidata_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/symlink_use_nameidata_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/symlink_use_nameidata_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/xattr_handler_simplified_pc/xattr_handler_simplified_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/locks_lock_file_wait_pc/locks_lock_file_wait_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/key_payload_data_array_pc/key_payload_data_array_pc.o
+/home/gs201/lustre-release/_lpb/account_page_dirtied_3a_pc/account_page_dirtied_3a_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/account_page_dirtied_3a_pc/account_page_dirtied_3a_pc.c:62:17: error: implicit declaration of function ‘account_page_dirtied’ [-Werror=implicit-function-declaration]
+   62 |                 account_page_dirtied(NULL, NULL, NULL);
+      |                 ^~~~~~~~~~~~~~~~~~~~
+  CC [M]  /home/gs201/lustre-release/_lpb/xattr_handler_name_pc/xattr_handler_name_pc.o
+cc1: some warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/account_page_dirtied_3a_pc/account_page_dirtied_3a_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/account_page_dirtied_3a_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/account_page_dirtied_3a_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/bio_integrity_prep_ret_bool_pc/bio_integrity_prep_ret_bool_pc.o
+/home/gs201/lustre-release/_lpb/xattr_handler_simplified_pc/xattr_handler_simplified_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/xattr_handler_simplified_pc/xattr_handler_simplified_pc.c:64:17: error: too few arguments to function ‘0->get’
+   64 |                 ((struct xattr_handler *)0)->get(&handler, NULL, NULL, NULL, 0);
+      |                 ^
+/home/gs201/lustre-release/_lpb/xattr_handler_simplified_pc/xattr_handler_simplified_pc.c:65:17: error: too few arguments to function ‘0->set’
+   65 |                 ((struct xattr_handler *)0)->set(&handler, NULL, NULL, NULL, 0, 0);
+      |                 ^
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/xattr_handler_simplified_pc/xattr_handler_simplified_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/xattr_handler_simplified_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/xattr_handler_simplified_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/have_bi_opf_pc/have_bi_opf_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/have_submit_bio_2args_pc/have_submit_bio_2args_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/have_clean_bdev_aliases_pc/have_clean_bdev_aliases_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/file_dentry_pc/file_dentry_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/inode_lock_pc/inode_lock_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/inode_ops_get_link_pc/inode_ops_get_link_pc.o
+/home/gs201/lustre-release/_lpb/bio_integrity_prep_ret_bool_pc/bio_integrity_prep_ret_bool_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/bio_integrity_prep_ret_bool_pc/bio_integrity_prep_ret_bool_pc.c:63:48: warning: ‘-Werror’ is not an option that controls warnings [-Wpragmas]
+   63 |                 #pragma GCC diagnostic warning "-Werror"
+      |                                                ^~~~~~~~~
+  CC [M]  /home/gs201/lustre-release/_lpb/in_compat_syscall_pc/in_compat_syscall_pc.o
+/home/gs201/lustre-release/_lpb/have_submit_bio_2args_pc/have_submit_bio_2args_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/have_submit_bio_2args_pc/have_submit_bio_2args_pc.c:63:17: error: too many arguments to function ‘submit_bio’
+   63 |                 submit_bio(READ, &bio);
+      |                 ^~~~~~~~~~
+In file included from /home/gs201/lustre-release/_lpb/have_submit_bio_2args_pc/have_submit_bio_2args_pc.c:56:
+include/linux/bio.h:426:6: note: declared here
+  426 | void submit_bio(struct bio *bio);
+      |      ^~~~~~~~~~
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/have_submit_bio_2args_pc/have_submit_bio_2args_pc.o] Error 1
+  CC [M]  /home/gs201/lustre-release/_lpb/xattr_handler_inode_param_pc/xattr_handler_inode_param_pc.o
+make[2]: Target '/home/gs201/lustre-release/_lpb/have_submit_bio_2args_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/have_submit_bio_2args_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/lock_page_memcg_pc/lock_page_memcg_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/down_write_killable_pc/down_write_killable_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/d_in_lookup_pc/d_in_lookup_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/d_init_pc/d_init_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/direct_io_2args_pc/direct_io_2args_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/generic_write_sync_2args_pc/generic_write_sync_2args_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/fop_iterate_shared_pc/fop_iterate_shared_pc.o
+/home/gs201/lustre-release/_lpb/xattr_handler_inode_param_pc/xattr_handler_inode_param_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/xattr_handler_inode_param_pc/xattr_handler_inode_param_pc.c:65:17: error: too few arguments to function ‘0->set’
+   65 |                 ((struct xattr_handler *)0)->set(&handler, NULL, NULL, NULL, NULL, 0, 0);
+      |                 ^
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/xattr_handler_inode_param_pc/xattr_handler_inode_param_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/xattr_handler_inode_param_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/xattr_handler_inode_param_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/posix_acl_valid_pc/posix_acl_valid_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/d_compare_4args_pc/d_compare_4args_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/full_name_hash_3args_pc/full_name_hash_3args_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/struct_posix_acl_xattr_pc/struct_posix_acl_xattr_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/inode_ops_xattr_pc/inode_ops_xattr_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/group_info_gid_pc/group_info_gid_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/vfs_setxattr_pc/vfs_setxattr_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/posix_acl_update_mode_pc/posix_acl_update_mode_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/bdi_has_io_pages_pc/bdi_has_io_pages_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/inode_ops_readlink_pc/inode_ops_readlink_pc.o
+/home/gs201/lustre-release/_lpb/inode_ops_xattr_pc/inode_ops_xattr_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/inode_ops_xattr_pc/inode_ops_xattr_pc.c:63:21: error: ‘struct inode_operations’ has no member named ‘setxattr’; did you mean ‘setattr’?
+   63 |                 iop.setxattr = NULL;
+      |                     ^~~~~~~~
+      |                     setattr
+/home/gs201/lustre-release/_lpb/inode_ops_xattr_pc/inode_ops_xattr_pc.c:64:21: error: ‘struct inode_operations’ has no member named ‘getxattr’; did you mean ‘getattr’?
+   64 |                 iop.getxattr = NULL;
+      |                     ^~~~~~~~
+      |                     getattr
+/home/gs201/lustre-release/_lpb/inode_ops_xattr_pc/inode_ops_xattr_pc.c:65:20: error: ‘struct inode_operations’ has no member named ‘removexattr’
+   65 |                 iop.removexattr = NULL;
+      |                    ^
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/inode_ops_xattr_pc/inode_ops_xattr_pc.o] Error 1
+  CC [M]  /home/gs201/lustre-release/_lpb/vm_fault_address_pc/vm_fault_address_pc.o
+make[2]: Target '/home/gs201/lustre-release/_lpb/inode_ops_xattr_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/inode_ops_xattr_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/getattr_path_pc/getattr_path_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/vm_operations_no_vm_area_struct_pc/vm_operations_no_vm_area_struct_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/key_usage_refcount_pc/key_usage_refcount_pc.o
+/home/gs201/lustre-release/_lpb/vfs_setxattr_pc/vfs_setxattr_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/vfs_setxattr_pc/vfs_setxattr_pc.c:62:17: error: too few arguments to function ‘__vfs_setxattr’
+   62 |                 __vfs_setxattr(NULL, NULL, NULL, NULL, 0, 0);
+      |                 ^~~~~~~~~~~~~~
+In file included from /home/gs201/lustre-release/_lpb/vfs_setxattr_pc/vfs_setxattr_pc.c:56:
+include/linux/xattr.h:62:5: note: declared here
+   62 | int __vfs_setxattr(struct user_namespace *, struct dentry *, struct inode *,
+      |     ^~~~~~~~~~~~~~
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/vfs_setxattr_pc/vfs_setxattr_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/vfs_setxattr_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/vfs_setxattr_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/crypto_max_alg_name_pc/crypto_max_alg_name_pc.o
+/home/gs201/lustre-release/_lpb/posix_acl_update_mode_pc/posix_acl_update_mode_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/posix_acl_update_mode_pc/posix_acl_update_mode_pc.c:63:17: error: too few arguments to function ‘posix_acl_update_mode’
+   63 |                 posix_acl_update_mode(NULL, NULL, NULL);
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/gs201/lustre-release/_lpb/posix_acl_update_mode_pc/posix_acl_update_mode_pc.c:57:
+include/linux/posix_acl.h:82:5: note: declared here
+   82 | int posix_acl_update_mode(struct user_namespace *, struct inode *, umode_t *,
+      |     ^~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/posix_acl_update_mode_pc/posix_acl_update_mode_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/posix_acl_update_mode_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/posix_acl_update_mode_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/current_time_pc/current_time_pc.o
+/home/gs201/lustre-release/_lpb/inode_ops_readlink_pc/inode_ops_readlink_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/inode_ops_readlink_pc/inode_ops_readlink_pc.c:63:32: error: ‘generic_readlink’ undeclared (first use in this function); did you mean ‘generic_read_dir’?
+   63 |                 iop.readlink = generic_readlink;
+      |                                ^~~~~~~~~~~~~~~~
+      |                                generic_read_dir
+/home/gs201/lustre-release/_lpb/inode_ops_readlink_pc/inode_ops_readlink_pc.c:63:32: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/inode_ops_readlink_pc/inode_ops_readlink_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/inode_ops_readlink_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/inode_ops_readlink_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/super_setup_bdi_name_pc/super_setup_bdi_name_pc.o
+/home/gs201/lustre-release/_lpb/getattr_path_pc/getattr_path_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/getattr_path_pc/getattr_path_pc.c:64:57: error: passing argument 1 of ‘1->getattr’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   64 |                 ((struct inode_operations *)1)->getattr(&path, NULL, 0, 0);
+      |                                                         ^~~~~
+      |                                                         |
+      |                                                         struct path *
+/home/gs201/lustre-release/_lpb/getattr_path_pc/getattr_path_pc.c:64:57: note: expected ‘struct user_namespace *’ but argument is of type ‘struct path *’
+/home/gs201/lustre-release/_lpb/getattr_path_pc/getattr_path_pc.c:64:17: error: too few arguments to function ‘1->getattr’
+   64 |                 ((struct inode_operations *)1)->getattr(&path, NULL, 0, 0);
+      |                 ^
+cc1: some warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/getattr_path_pc/getattr_path_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/getattr_path_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/getattr_path_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/bi_status_pc/bi_status_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/get_inode_usage_pc/get_inode_usage_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/pagevec_init_pc/pagevec_init_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/bi_bdev_pc/bi_bdev_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/itree_cached_pc/itree_cached_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/vm_fault_t_pc/vm_fault_t_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/VM_FAULT_RETRY_pc/VM_FAULT_RETRY_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/i_pages_pc/i_pages_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/inode_timespec64_pc/inode_timespec64_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/alloc_file_pseudo_pc/alloc_file_pseudo_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/radix_tree_tag_set_pc/radix_tree_tag_set_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/uapi_linux_mount_pc/uapi_linux_mount_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/hash_lock_isa_spinlock_t_pc/hash_lock_isa_spinlock_t_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/genl_family_has_resv_start_op_pc/genl_family_has_resv_start_op_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/struct_bvec_iter_all_pc/struct_bvec_iter_all_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/keyring_search_4args_pc/keyring_search_4args_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/bye_bio_bi_phys_segments_pc/bye_bio_bi_phys_segments_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/lock_manager_ops_lm_compare_owner_pc/lock_manager_ops_lm_compare_owner_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/fscrypt_digested_name_pc/fscrypt_digested_name_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/fscrypt_dummy_context_enabled_pc/fscrypt_dummy_context_enabled_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/kthread_use_mm_pc/kthread_use_mm_pc.o
+/home/gs201/lustre-release/_lpb/keyring_search_4args_pc/keyring_search_4args_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/keyring_search_4args_pc/keyring_search_4args_pc.c:63:17: warning: ‘keyring’ is used uninitialized [-Wuninitialized]
+   63 |                 keyring_search(keyring, NULL, NULL, false);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC [M]  /home/gs201/lustre-release/_lpb/fscrypt_fname_alloc_buffer_pc/fscrypt_fname_alloc_buffer_pc.o
+/home/gs201/lustre-release/_lpb/lock_manager_ops_lm_compare_owner_pc/lock_manager_ops_lm_compare_owner_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/lock_manager_ops_lm_compare_owner_pc/lock_manager_ops_lm_compare_owner_pc.c:63:24: error: ‘struct lock_manager_operations’ has no member named ‘lm_compare_owner’; did you mean ‘lm_mod_owner’?
+   63 |                 lm_ops.lm_compare_owner = NULL;
+      |                        ^~~~~~~~~~~~~~~~
+      |                        lm_mod_owner
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/lock_manager_ops_lm_compare_owner_pc/lock_manager_ops_lm_compare_owner_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/lock_manager_ops_lm_compare_owner_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/lock_manager_ops_lm_compare_owner_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/fscrypt_set_context_pc/fscrypt_set_context_pc.o
+/home/gs201/lustre-release/_lpb/fscrypt_digested_name_pc/fscrypt_digested_name_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/fscrypt_digested_name_pc/fscrypt_digested_name_pc.c:62:46: error: storage size of ‘fname’ isn’t known
+   62 |                 struct fscrypt_digested_name fname;
+      |                                              ^~~~~
+/home/gs201/lustre-release/_lpb/fscrypt_digested_name_pc/fscrypt_digested_name_pc.c:62:46: error: unused variable ‘fname’ [-Werror=unused-variable]
+/home/gs201/lustre-release/_lpb/bye_bio_bi_phys_segments_pc/bye_bio_bi_phys_segments_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/bye_bio_bi_phys_segments_pc/bye_bio_bi_phys_segments_pc.c:63:20: error: ‘struct bio’ has no member named ‘bi_phys_segments’
+   63 |                 bio->bi_phys_segments++;
+      |                    ^~
+cc1: all warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/bye_bio_bi_phys_segments_pc/bye_bio_bi_phys_segments_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/bye_bio_bi_phys_segments_pc/' not remade because of errors.
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/fscrypt_digested_name_pc/fscrypt_digested_name_pc.o] Error 1
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/bye_bio_bi_phys_segments_pc] Error 2
+make[2]: Target '/home/gs201/lustre-release/_lpb/fscrypt_digested_name_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/fscrypt_digested_name_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/fname_is_nokey_name_pc/fname_is_nokey_name_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/fscrypt_set_test_dummy_encryption_pc/fscrypt_set_test_dummy_encryption_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/fscrypt_free_dummy_policy_pc/fscrypt_free_dummy_policy_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/iter_file_splice_write_pc/iter_file_splice_write_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/bdi_has_debug_stats_pc/bdi_has_debug_stats_pc.o
+/home/gs201/lustre-release/_lpb/fscrypt_dummy_context_enabled_pc/fscrypt_dummy_context_enabled_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/fscrypt_dummy_context_enabled_pc/fscrypt_dummy_context_enabled_pc.c:62:17: error: implicit declaration of function ‘fscrypt_dummy_context_enabled’ [-Werror=implicit-function-declaration]
+   62 |                 fscrypt_dummy_context_enabled(NULL);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/fscrypt_dummy_context_enabled_pc/fscrypt_dummy_context_enabled_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/fscrypt_dummy_context_enabled_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/fscrypt_dummy_context_enabled_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/fscrypt_is_no_key_name_pc/fscrypt_is_no_key_name_pc.o
+/home/gs201/lustre-release/_lpb/bdi_has_debug_stats_pc/bdi_has_debug_stats_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/bdi_has_debug_stats_pc/bdi_has_debug_stats_pc.c:64:21: error: ‘struct backing_dev_info’ has no member named ‘debug_stats’
+   64 |                 info.debug_stats = NULL;
+      |                     ^
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/bdi_has_debug_stats_pc/bdi_has_debug_stats_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/bdi_has_debug_stats_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/bdi_has_debug_stats_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/fscrypt_prepare_readdir_pc/fscrypt_prepare_readdir_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/bio_set_dev_pc/bio_set_dev_pc.o
+/home/gs201/lustre-release/_lpb/fscrypt_set_test_dummy_encryption_pc/fscrypt_set_test_dummy_encryption_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/fscrypt_set_test_dummy_encryption_pc/fscrypt_set_test_dummy_encryption_pc.c:63:17: error: implicit declaration of function ‘fscrypt_set_test_dummy_encryption’; did you mean ‘fscrypt_show_test_dummy_encryption’? [-Werror=implicit-function-declaration]
+   63 |                 fscrypt_set_test_dummy_encryption(NULL, arg, NULL);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                 fscrypt_show_test_dummy_encryption
+cc1: all warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/fscrypt_set_test_dummy_encryption_pc/fscrypt_set_test_dummy_encryption_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/fscrypt_set_test_dummy_encryption_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/fscrypt_set_test_dummy_encryption_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/inode_ops_has_user_namespace_argument_pc/inode_ops_has_user_namespace_argument_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/copy_page_from_iter_atomic_pc/copy_page_from_iter_atomic_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/fileattr_set_pc/fileattr_set_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/get_acl_rcu_argument_pc/get_acl_rcu_argument_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/fault_in_iov_iter_readable_pc/fault_in_iov_iter_readable_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/security_dentry_init_security_xattr_name_arg_pc/security_dentry_init_security_xattr_name_arg_pc.o
+/home/gs201/lustre-release/_lpb/get_acl_rcu_argument_pc/get_acl_rcu_argument_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/get_acl_rcu_argument_pc/get_acl_rcu_argument_pc.c:62:57: error: passing argument 1 of ‘1->get_acl’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   62 |                 ((struct inode_operations *)1)->get_acl((struct inode *)NULL, 0, false);
+/home/gs201/lustre-release/_lpb/get_acl_rcu_argument_pc/get_acl_rcu_argument_pc.c:62:57: note: expected ‘struct user_namespace *’ but argument is of type ‘struct inode *’
+cc1: all warnings being treated as errors
+  CC [M]  /home/gs201/lustre-release/_lpb/kiocb_ki_complete_2args_pc/kiocb_ki_complete_2args_pc.o
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/get_acl_rcu_argument_pc/get_acl_rcu_argument_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/get_acl_rcu_argument_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/get_acl_rcu_argument_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/address_spaace_operaions_invalidate_folio_pc/address_spaace_operaions_invalidate_folio_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/address_spaace_operaions_dirty_folio_pc/address_spaace_operaions_dirty_folio_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/alloc_inode_sb_pc/alloc_inode_sb_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/grab_cache_page_write_begin_with_flags_pc/grab_cache_page_write_begin_with_flags_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/address_space_operations_read_folio_pc/address_space_operations_read_folio_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/read_cache_page_filler_with_file_pc/read_cache_page_filler_with_file_pc.o
+/home/gs201/lustre-release/_lpb/security_dentry_init_security_xattr_name_arg_pc/security_dentry_init_security_xattr_name_arg_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/security_dentry_init_security_xattr_name_arg_pc/security_dentry_init_security_xattr_name_arg_pc.c:69:56: error: passing argument 5 of ‘security_dentry_init_security’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   69 |                                                        ctx, ctxlen);
+      |                                                        ^~~
+      |                                                        |
+      |                                                        void **
+In file included from /home/gs201/lustre-release/_lpb/security_dentry_init_security_xattr_name_arg_pc/security_dentry_init_security_xattr_name_arg_pc.c:56:
+include/linux/security.h:497:54: note: expected ‘struct lsmcontext *’ but argument is of type ‘void **’
+  497 |                                   struct lsmcontext *lsmcxt);
+      |                                   ~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/gs201/lustre-release/_lpb/security_dentry_init_security_xattr_name_arg_pc/security_dentry_init_security_xattr_name_arg_pc.c:68:26: error: too many arguments to function ‘security_dentry_init_security’
+   68 |                 int rc = security_dentry_init_security(dentry, mode, name, &xattr_name,
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/gs201/lustre-release/_lpb/security_dentry_init_security_xattr_name_arg_pc/security_dentry_init_security_xattr_name_arg_pc.c:56:
+include/linux/security.h:494:5: note: declared here
+  494 | int security_dentry_init_security(struct dentry *dentry, int mode,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/security_dentry_init_security_xattr_name_arg_pc/security_dentry_init_security_xattr_name_arg_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/security_dentry_init_security_xattr_name_arg_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/security_dentry_init_security_xattr_name_arg_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/address_space_operations_release_folio_pc/address_space_operations_release_folio_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/lsmcontext_init_pc/lsmcontext_init_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/security_dentry_init_security_with_ctx_pc/security_dentry_init_security_with_ctx_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/no_llseek_pc/no_llseek_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/dquot_transfer_pc/dquot_transfer_pc.o
+/home/gs201/lustre-release/_lpb/grab_cache_page_write_begin_with_flags_pc/grab_cache_page_write_begin_with_flags_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/grab_cache_page_write_begin_with_flags_pc/grab_cache_page_write_begin_with_flags_pc.c:63:23: error: too many arguments to function ‘grab_cache_page_write_begin’
+   63 |                 (void)grab_cache_page_write_begin(mapping, 0, 1);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/gs201/lustre-release/_lpb/grab_cache_page_write_begin_with_flags_pc/grab_cache_page_write_begin_with_flags_pc.c:56:
+include/linux/pagemap.h:733:14: note: declared here
+  733 | struct page *grab_cache_page_write_begin(struct address_space *mapping,
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/grab_cache_page_write_begin_with_flags_pc/grab_cache_page_write_begin_with_flags_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/grab_cache_page_write_begin_with_flags_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/grab_cache_page_write_begin_with_flags_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/address_space_operations_migrate_folio_pc/address_space_operations_migrate_folio_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/register_shrinker_format_pc/register_shrinker_format_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/vfs_setxattr_non_const_value_arg_pc/vfs_setxattr_non_const_value_arg_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/iov_iter_get_pages_alloc2_pc/iov_iter_get_pages_alloc2_pc.o
+/home/gs201/lustre-release/_lpb/no_llseek_pc/no_llseek_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/no_llseek_pc/no_llseek_pc.c:63:35: error: lvalue required as unary ‘&’ operand
+   63 |                         .llseek = &no_llseek,
+      |                                   ^
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/no_llseek_pc/no_llseek_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/no_llseek_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/no_llseek_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/get_random_u32_and_u64_pc/get_random_u32_and_u64_pc.o
+/home/gs201/lustre-release/_lpb/lsmcontext_init_pc/lsmcontext_init_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/lsmcontext_init_pc/lsmcontext_init_pc.c:64:17: error: implicit declaration of function ‘lsmcontext_init’ [-Werror=implicit-function-declaration]
+   64 |                 lsmcontext_init(&ctx, "", 0, 0);
+      |                 ^~~~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/lsmcontext_init_pc/lsmcontext_init_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/lsmcontext_init_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/lsmcontext_init_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/filldir_ctx_return_bool_pc/filldir_ctx_return_bool_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/filemap_get_folios_contig_pc/filemap_get_folios_contig_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/get_random_u32_below_pc/get_random_u32_below_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/acl_with_dentry_pc/acl_with_dentry_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/locks_lock_file_wait_in_filelock_pc/locks_lock_file_wait_in_filelock_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/inode_ops_getattr_has_mnt_idmap_argument_pc/inode_ops_getattr_has_mnt_idmap_argument_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/kernel_cap_t_has_u64_value_pc/kernel_cap_t_has_u64_value_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/bio_integrity_prep_fn_pc/bio_integrity_prep_fn_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/lockdep_is_held_pc/lockdep_is_held_pc.o
+  CC [M]  /home/gs201/lustre-release/_lpb/linux_wait_bit_h_pc/linux_wait_bit_h_pc.o
+/home/gs201/lustre-release/_lpb/locks_lock_file_wait_in_filelock_pc/locks_lock_file_wait_in_filelock_pc.c:56:26: fatal error: linux/filelock.h: No such file or directory
+   56 |                 #include <linux/filelock.h>
+      |                          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/locks_lock_file_wait_in_filelock_pc/locks_lock_file_wait_in_filelock_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/locks_lock_file_wait_in_filelock_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/locks_lock_file_wait_in_filelock_pc] Error 2
+  CC [M]  /home/gs201/lustre-release/_lpb/linux_blk-integrity_h_pc/linux_blk-integrity_h_pc.o
+/home/gs201/lustre-release/_lpb/inode_ops_getattr_has_mnt_idmap_argument_pc/inode_ops_getattr_has_mnt_idmap_argument_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/inode_ops_getattr_has_mnt_idmap_argument_pc/inode_ops_getattr_has_mnt_idmap_argument_pc.c:63:57: error: passing argument 1 of ‘1->getattr’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   63 |                 ((struct inode_operations *)1)->getattr((struct mnt_idmap *)NULL,
+/home/gs201/lustre-release/_lpb/inode_ops_getattr_has_mnt_idmap_argument_pc/inode_ops_getattr_has_mnt_idmap_argument_pc.c:63:57: note: expected ‘struct user_namespace *’ but argument is of type ‘struct mnt_idmap *’
+cc1: all warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/inode_ops_getattr_has_mnt_idmap_argument_pc/inode_ops_getattr_has_mnt_idmap_argument_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/inode_ops_getattr_has_mnt_idmap_argument_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/inode_ops_getattr_has_mnt_idmap_argument_pc] Error 2
+/home/gs201/lustre-release/_lpb/kernel_cap_t_has_u64_value_pc/kernel_cap_t_has_u64_value_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/kernel_cap_t_has_u64_value_pc/kernel_cap_t_has_u64_value_pc.c:64:20: error: ‘kernel_cap_t’ {aka ‘struct kernel_cap_struct’} has no member named ‘val’
+   64 |                 cap.val = 0xffffffffffffffffull;
+      |                    ^
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/kernel_cap_t_has_u64_value_pc/kernel_cap_t_has_u64_value_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/kernel_cap_t_has_u64_value_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/kernel_cap_t_has_u64_value_pc] Error 2
+/home/gs201/lustre-release/_lpb/bio_integrity_prep_fn_pc/bio_integrity_prep_fn_pc.c: In function ‘main’:
+/home/gs201/lustre-release/_lpb/bio_integrity_prep_fn_pc/bio_integrity_prep_fn_pc.c:62:17: error: implicit declaration of function ‘bio_integrity_prep_fn’; did you mean ‘bio_integrity_prep’? [-Werror=implicit-function-declaration]
+   62 |                 bio_integrity_prep_fn(NULL, NULL, NULL);
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+      |                 bio_integrity_prep
+cc1: some warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:260: /home/gs201/lustre-release/_lpb/bio_integrity_prep_fn_pc/bio_integrity_prep_fn_pc.o] Error 1
+make[2]: Target '/home/gs201/lustre-release/_lpb/bio_integrity_prep_fn_pc/' not remade because of errors.
+make[1]: *** [scripts/Makefile.build:512: /home/gs201/lustre-release/_lpb/bio_integrity_prep_fn_pc] Error 2
+make[1]: Target '/home/gs201/lustre-release/_lpb/' not remade because of errors.
+make: *** [Makefile:2026: /home/gs201/lustre-release/_lpb] Error 2
+make: Target 'modules' not remade because of errors.
+make: Leaving directory '/usr/src/linux-headers-6.2.0-36-generic'

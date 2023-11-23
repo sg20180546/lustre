@@ -1,0 +1,9 @@
+/home/gs201/lustre-release/lustre/osc/osc_request.o
+/home/gs201/lustre-release/lustre/osc/lproc_osc.o
+/home/gs201/lustre-release/lustre/osc/osc_dev.o
+/home/gs201/lustre-release/lustre/osc/osc_object.o
+/home/gs201/lustre-release/lustre/osc/osc_page.o
+/home/gs201/lustre-release/lustre/osc/osc_lock.o
+/home/gs201/lustre-release/lustre/osc/osc_io.o
+/home/gs201/lustre-release/lustre/osc/osc_quota.o
+/home/gs201/lustre-release/lustre/osc/osc_cache.o

@@ -1,0 +1,9 @@
+/home/gs201/lustre-release/lnet/selftest/console.o
+/home/gs201/lustre-release/lnet/selftest/conrpc.o
+/home/gs201/lustre-release/lnet/selftest/conctl.o
+/home/gs201/lustre-release/lnet/selftest/framework.o
+/home/gs201/lustre-release/lnet/selftest/timer.o
+/home/gs201/lustre-release/lnet/selftest/rpc.o
+/home/gs201/lustre-release/lnet/selftest/module.o
+/home/gs201/lustre-release/lnet/selftest/ping_test.o
+/home/gs201/lustre-release/lnet/selftest/brw_test.o

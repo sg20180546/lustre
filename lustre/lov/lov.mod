@@ -1,0 +1,15 @@
+/home/gs201/lustre-release/lustre/lov/lov_dev.o
+/home/gs201/lustre-release/lustre/lov/lov_ea.o
+/home/gs201/lustre-release/lustre/lov/lov_io.o
+/home/gs201/lustre-release/lustre/lov/lov_lock.o
+/home/gs201/lustre-release/lustre/lov/lov_merge.o
+/home/gs201/lustre-release/lustre/lov/lov_obd.o
+/home/gs201/lustre-release/lustre/lov/lov_object.o
+/home/gs201/lustre-release/lustre/lov/lov_offset.o
+/home/gs201/lustre-release/lustre/lov/lov_pack.o
+/home/gs201/lustre-release/lustre/lov/lov_page.o
+/home/gs201/lustre-release/lustre/lov/lov_pool.o
+/home/gs201/lustre-release/lustre/lov/lov_request.o
+/home/gs201/lustre-release/lustre/lov/lovsub_dev.o
+/home/gs201/lustre-release/lustre/lov/lovsub_object.o
+/home/gs201/lustre-release/lustre/lov/lproc_lov.o

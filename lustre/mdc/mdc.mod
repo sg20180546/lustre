@@ -1,0 +1,9 @@
+/home/gs201/lustre-release/lustre/mdc/mdc_request.o
+/home/gs201/lustre-release/lustre/mdc/mdc_reint.o
+/home/gs201/lustre-release/lustre/mdc/lproc_mdc.o
+/home/gs201/lustre-release/lustre/mdc/mdc_lib.o
+/home/gs201/lustre-release/lustre/mdc/mdc_locks.o
+/home/gs201/lustre-release/lustre/mdc/mdc_changelog.o
+/home/gs201/lustre-release/lustre/mdc/mdc_dev.o
+/home/gs201/lustre-release/lustre/mdc/mdc_batch.o
+/home/gs201/lustre-release/lustre/mdc/mdc_acl.o

@@ -1,0 +1,10 @@
+prefix=/usr
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: lustreapi
+Description: Library that applications can use to take advantage of Lustre's advance features
+Version: 2.15.58_129_gd7d1644
+Cflags: -I${includedir}/lustre
+Libs: -L${libdir} -llustreapi
